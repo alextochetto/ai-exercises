@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-GreedyAlgorithm", "1-GreedyAlgorithm", "{E504E401-E3B9-4308-ABE4-72E98913099F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreedyAlgorithm", "..\1-greedy-algorithm\GreedyAlgorithm\GreedyAlgorithm.csproj", "{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33} = {E504E401-E3B9-4308-ABE4-72E98913099F}
+	EndGlobalSection
+EndGlobal

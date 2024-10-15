@@ -87,6 +87,7 @@ namespace GreedyAlgorithm
             tresBarras.Adjacentes.Add(new Adjacente { Vertice = saoMateus, Custo = 43 });
             tresBarras.Adjacentes.Add(new Adjacente { Vertice = canoinhas, Custo = 12 });
 
+            // Vetor Ordenado
             Vetor vetor = new Vetor(5);
             vetor.Inserir(palmeira);
             vetor.Inserir(lapa);
@@ -94,6 +95,11 @@ namespace GreedyAlgorithm
             vetor.Inserir(curitiba);
             vetor.Inserir(contenda);
             vetor.Imprimir();
+
+            //Busca Gulosa
+            Greedy greedy = new Greedy();
+            greedy.Objetivo = curitiba;
+            greedy.Buscar(portoUniao);
         }
     }
 
@@ -134,7 +140,6 @@ namespace GreedyAlgorithm
                 Console.ReadLine();
                 return;
             }
-
             int posicao = 0;
             for (int i = 0; i <= this.UltimaPosicao; i++)
             {
@@ -169,6 +174,40 @@ namespace GreedyAlgorithm
                 for (int i = 0; i <= this.UltimaPosicao; i++)
                 {
                     Console.WriteLine($"{i} - {this.Vertices[i].Rotulo} - {this.Vertices[i].Distancia}");
+                }
+            }
+        }
+    }
+
+    class Greedy
+    {
+        public Vertice Objetivo { get; set; }
+        public bool Encontrado { get; set; }
+
+        public void Buscar(Vertice atual)
+        {
+            Console.WriteLine("----------");
+            Console.WriteLine($"Atual: {atual.Rotulo}");
+            atual.Visitado = true;
+            if (atual == this.Objetivo)
+            {
+                this.Encontrado = true;
+            }
+            else
+            {
+                Vetor vetor = new Vetor(atual.Adjacentes.Count);
+                foreach (Adjacente adjacente in atual.Adjacentes)
+                {
+                    if (!adjacente.Vertice.Visitado)
+                    {
+                        adjacente.Vertice.Visitado = true;
+                        vetor.Inserir(adjacente.Vertice);
+                    }
+                }
+                vetor.Imprimir();
+                if (vetor.Vertices[0] != null)
+                {
+                    Buscar(vetor.Vertices[0]);
                 }
             }
         }
