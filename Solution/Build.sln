@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-GreedyAlgorithm", "1-Gree
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreedyAlgorithm", "..\1-greedy-algorithm\GreedyAlgorithm\GreedyAlgorithm.csproj", "{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-OptimizingAlgorithm", "2-OptimizingAlgorithm", "{8CE09ECF-A6E1-407E-A95D-1B8552D73BCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OptimizingAlgorithm", "..\2-optimizing-algorithm\OptimizingAlgorithm\OptimizingAlgorithm.csproj", "{61AA3340-822D-4FE2-9D79-77D1CBABE9B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +21,19 @@ Global
 		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61AA3340-822D-4FE2-9D79-77D1CBABE9B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AA3340-822D-4FE2-9D79-77D1CBABE9B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AA3340-822D-4FE2-9D79-77D1CBABE9B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AA3340-822D-4FE2-9D79-77D1CBABE9B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F8B955C6-1426-4C6A-8E58-2EB3F8A12D33} = {E504E401-E3B9-4308-ABE4-72E98913099F}
+		{61AA3340-822D-4FE2-9D79-77D1CBABE9B3} = {8CE09ECF-A6E1-407E-A95D-1B8552D73BCC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69CF5406-F4D3-46F3-9112-4C3C72FFB907}
 	EndGlobalSection
 EndGlobal
